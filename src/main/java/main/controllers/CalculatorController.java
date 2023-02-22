@@ -17,7 +17,6 @@ public class CalculatorController {
 	
 	@GetMapping
 	public Integer getResult(@RequestParam("a") Integer a, @RequestParam("b") Integer b) {
-		System.out.println("Executed")
 		return calculator.getSum(a, b);
 	}
 
